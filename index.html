@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Responsive Redesign Project</title>
+    <title>Deployment Project</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
       rel="stylesheet"
@@ -12,7 +12,7 @@
   <body>
     <body>
       <header>
-        <h1>Intro to A/B Testing</h1>
+        <h1>Deployment</h1>
       </header>
 
       <hr class="divider" />
@@ -20,17 +20,18 @@
       <main>
         <h2>Objective:</h2>
         <p>
-          The objective of the A/B testing project was to experiment with
-          different versions of a website and use A/B testing to find out which
-          version was "better."
+          The objective of this project was to gain experience building web apps
+          in React with an aggregator function. I created a sandwitch builder app that lets you
+          add ingrediants and make your own sandwitch. The app comes with sort
+          and filter features to sort/filter though items (nut butters, jams,
+          toppings).
         </p>
 
-        <h2>How do we measure "better"?</h2>
+        <h2>Competitive Analysis</h2>
         <p>
-          We want to create a smoother, more likable user experience, so we are
-          trying to find the version that performs "better" in terms of user
-          satisfaction and engagement. I chose key metrics to test which version was "better" for the task of booking an
-          appointment.
+          First, we want to research other websites with aggregator functions. I chose 
+          3 websites with a favoriting function. I chose to compare Etsy, Sephora, and Amazon's favoriting
+          functionality and to outline the differences in a comparison chart. 
         </p>
         <h3>Metrics</h3>
         <ul>
@@ -43,8 +44,8 @@
             the page.
           </li>
           <li>
-            <span class="color">If Misclicked </span>: A boolean 
-            representing if a user clicked a button not relevant to the task.
+            <span class="color">If Misclicked </span>: A boolean representing if
+            a user clicked a button not relevant to the task.
           </li>
         </ul>
 
@@ -113,112 +114,132 @@
             <span class="color">Alternative Hypothesis</span>: Version B takes
             less time to complete the task.
           </p>
-        <img
-          src="public/time_on_page_graph.png"
-          alt="Data and Statistical Variables from Time on Page T-Test"
-        />
-        <p>
-          <span class="color">Conclusion</span>: The p-value is the level of
-          significance. The p-value for this test was less than 0.01, which is
-          smaller than the alpha. So, we accept the alternative hypothesis. The
-          t-score is the magnitude of difference between the two groups. We
-          received a negative t-score, meaning there was a significant decrease
-          in time spent on the page from version A to version B. We are 95% confident that it takes users less time on version B to
-          book an appointment.
-        </p>
-        <p>
-          <span class="color">Summary Statistics</span>: The average time it
-          took to complete the task in version A was 24.4 seconds, but in
-          version B it was 9.4 seconds. This gives us a rough estimate of how
-          much less time to takes on version B than on version A. There is at
-          least a 10 second decrease in time it takes to book an appointment on
-          version B than version A.
-        </p>
-      </div>
+          <img
+            src="public/time_on_page_graph.png"
+            alt="Data and Statistical Variables from Time on Page T-Test"
+          />
+          <p>
+            <span class="color">Conclusion</span>: The p-value is the level of
+            significance. The p-value for this test was less than 0.01, which is
+            smaller than the alpha. So, we accept the alternative hypothesis.
+            The t-score is the magnitude of difference between the two groups.
+            We received a negative t-score, meaning there was a significant
+            decrease in time spent on the page from version A to version B. We
+            are 95% confident that it takes users less time on version B to book
+            an appointment.
+          </p>
+          <p>
+            <span class="color">Summary Statistics</span>: The average time it
+            took to complete the task in version A was 24.4 seconds, but in
+            version B it was 9.4 seconds. This gives us a rough estimate of how
+            much less time to takes on version B than on version A. There is at
+            least a 10 second decrease in time it takes to book an appointment
+            on version B than version A.
+          </p>
+        </div>
 
-      <h3>Number of Clicks One Tailed T-Test</h3>
+        <h3>Number of Clicks One Tailed T-Test</h3>
         <div class="stat-test">
           <p>
-            Number of clicks is a continous variable (the number of times a user clicks on the webpage can 
-            extend until infinity), so I knew to use a T-test. I used a one-tailed T-test, because I wanted to see if
-            version B optimized the number of clicks it took to complete the task. I hoped that version B would make it easier for users to
-            book an appointment, so there would be fewer clicks on version B than on version A. For both versions, there required 2 correct clicks to complete the task.
+            Number of clicks is a continous variable (the number of times a user
+            clicks on the webpage can extend until infinity), so I knew to use a
+            T-test. I used a one-tailed T-test, because I wanted to see if
+            version B optimized the number of clicks it took to complete the
+            task. I hoped that version B would make it easier for users to book
+            an appointment, so there would be fewer clicks on version B than on
+            version A. For both versions, there required 2 correct clicks to
+            complete the task.
           </p>
           <p>
             <span class="color">Null Hypothesis</span>: There is no difference
-            in the number of clicks it takes to complete the task for version A and version
-            B or version A uses less clicks. 
+            in the number of clicks it takes to complete the task for version A
+            and version B or version A uses less clicks.
           </p>
           <p>
-            <span class="color">Alternative Hypothesis</span>: Version B uses less clicks
-            to complete the task than version A.
+            <span class="color">Alternative Hypothesis</span>: Version B uses
+            less clicks to complete the task than version A.
           </p>
-        <img
-          src="public/num_clicks_graph.png"
-          alt="Data and Statistical Variables from Time on Page T-Test"
-        />
-        <p>
-          <span class="color">Conclusion</span>: The p-value for this test was 0.01, which is
-          less than the alpha. We accept the alternative hypothesis. The t-score is negative, so there was a significant decrease
-          in the number of clicks on the page from version A to version B.
-          We are 95% confident that it takes users less clicks on version B to
-          book an appointment than on version A.
-        </p>
-        <p>
-          <span class="color">Summary Statistics</span>: The average clicks it
-          took to complete the task in version A was 5, but in
-          version B it was 2.5 clicks. The task only takes 2 clicks to complete, so version A led
-          to more misclicks. We can conclude that version B makes it more straightforward to book an appointment
-          and that version A can be misleading. Version A also has a variance of 28.9, whereas version B has a variance of
-          0.2. This means there is more change in the number of clicks used in version A than B. So, users are more
-          certain in version B on where to click when booking an appointment.
-        </p>
-      </div>
+          <img
+            src="public/num_clicks_graph.png"
+            alt="Data and Statistical Variables from Time on Page T-Test"
+          />
+          <p>
+            <span class="color">Conclusion</span>: The p-value for this test was
+            0.01, which is less than the alpha. We accept the alternative
+            hypothesis. The t-score is negative, so there was a significant
+            decrease in the number of clicks on the page from version A to
+            version B. We are 95% confident that it takes users less clicks on
+            version B to book an appointment than on version A.
+          </p>
+          <p>
+            <span class="color">Summary Statistics</span>: The average clicks it
+            took to complete the task in version A was 5, but in version B it
+            was 2.5 clicks. The task only takes 2 clicks to complete, so version
+            A led to more misclicks. We can conclude that version B makes it
+            more straightforward to book an appointment and that version A can
+            be misleading. Version A also has a variance of 28.9, whereas
+            version B has a variance of 0.2. This means there is more change in
+            the number of clicks used in version A than B. So, users are more
+            certain in version B on where to click when booking an appointment.
+          </p>
+        </div>
 
-      <h3>If Misclicked Chi-Square Test</h3>
+        <h3>If Misclicked Chi-Square Test</h3>
         <div class="stat-test">
           <p>
-            If misclicked is a categorical variable, meaning each group can have 2 categories, TRUE or FALSE for if the user misclicked. 
-            We are tring to see if the frequency of each category is different across the two versions, so we use a chi-square test. 
-            I wanted to see if there was a difference on if the user
-            misclicked in version A and version B. I hoped version B would lead to less misclicks. 
+            If misclicked is a categorical variable, meaning each group can have
+            2 categories, TRUE or FALSE for if the user misclicked. We are tring
+            to see if the frequency of each category is different across the two
+            versions, so we use a chi-square test. I wanted to see if there was
+            a difference on if the user misclicked in version A and version B. I
+            hoped version B would lead to less misclicks.
           </p>
           <p>
             <span class="color">Null Hypothesis</span>: There is no difference
-            on if the user misclicked for version A and version B. 
+            on if the user misclicked for version A and version B.
           </p>
           <p>
-            <span class="color">Alternative Hypothesis</span>: There is a difference on if the user misclicked for version A and version B.
+            <span class="color">Alternative Hypothesis</span>: There is a
+            difference on if the user misclicked for version A and version B.
           </p>
-        <img
-          src="public/if_misclicked_graph.png"
-          alt="Data and Statistical Variables from Time on Page T-Test"
-        />
-        <p>
-          <span class="color">Conclusion</span>: The p-value for this test was 0.04, which is still
-          less than the alpha. We accept the alternative hypothesis, and
-           we are 95% confident that there is a difference on if the user misclicks across version A and version B.
-        </p>
-        <p>
-          <span class="color">Summary Statistics</span>: We can look closer at the table values to find the direction
-          of this difference. In version A there were 6 misclicks, but only 1 misclick in version B. This means that version B led to 
-          users being more confident in where to click to book an apointment than version A. So, version B is more user-friendly. 
-        </p>
-      </div>
+          <img
+            src="public/if_misclicked_graph.png"
+            alt="Data and Statistical Variables from Time on Page T-Test"
+          />
+          <p>
+            <span class="color">Conclusion</span>: The p-value for this test was
+            0.04, which is still less than the alpha. We accept the alternative
+            hypothesis, and we are 95% confident that there is a difference on
+            if the user misclicks across version A and version B.
+          </p>
+          <p>
+            <span class="color">Summary Statistics</span>: We can look closer at
+            the table values to find the direction of this difference. In
+            version A there were 6 misclicks, but only 1 misclick in version B.
+            This means that version B led to users being more confident in where
+            to click to book an apointment than version A. So, version B is more
+            user-friendly.
+          </p>
+        </div>
 
-      <h2>Combined Discussion</h2>
-      <p>
-        For all metrics, version B performed better. We can go ahead and change our doctor's office webpage from version A to 
-        version B to make it easier for the user to book an appointment. This update will improve user satisfaction and engagement, meaning
-        that users are more likely to choose our website for service. 
-      </p>
-      <p>
-        It's also important to note that there were only 22 participlants in the testing process, where each test had 22 data points 
-        for version A and 21 data points for version B. All participants were college students. They were familiar with technology, so this could have led to bias in results. 
-        Though this testing process helped understand
-        the significance of A/B testing, if we were testing a real webpage, we would need to test according to that website's 
-        demographic and traffic rate.
-      </p>
+        <h2>Combined Discussion</h2>
+        <p>
+          For all metrics, version B performed better. We can go ahead and
+          change our doctor's office webpage from version A to version B to make
+          it easier for the user to book an appointment. This update will
+          improve user satisfaction and engagement, meaning that users are more
+          likely to choose our website for service.
+        </p>
+        <p>
+          It's also important to note that there were only 22 participlants in
+          the testing process, where each test had 22 data points for version A
+          and 21 data points for version B. All participants were college
+          students. They were familiar with technology, so this could have led
+          to bias in results. Though this testing process helped understand the
+          significance of A/B testing, if we were testing a real webpage, we
+          would need to test according to that website's demographic and traffic
+          rate.
+        </p>
         <br />
         <br />
       </main>
