@@ -55,16 +55,17 @@ p {
     text-align: center; /* Center align text */
     font-size: 1.2rem;
 }
-.stat-test {
+table {
+    border-collapse: collapse;
     width: 60vw;
-}
-.stat-test p {
-    display: inline-flexbox;
-    margin-bottom: 1rem;
-    width: 60vw;
-    align-items: flex-start;
-    font-size: 1.2rem;
-}
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    width: 30vw;
+  }
 ul {
     display: flex;
     list-style-type: disc; /* Set the list style to disc, which creates bulleted lists */
@@ -80,6 +81,9 @@ a {
 }
 .italic {
     font-style: italic; /* Apply italic style to elements with the class "italic" */
+}
+.bold {
+    font-weight: bold;
 }
 .color {
     font-weight: bold;

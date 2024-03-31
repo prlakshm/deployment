@@ -21,33 +21,81 @@
         <h2>Objective:</h2>
         <p>
           The objective of this project was to gain experience building web apps
-          in React with an aggregator function. I created a sandwitch builder app that lets you
-          add ingrediants and make your own sandwitch. The app comes with sort
-          and filter features to sort/filter though items (nut butters, jams,
-          toppings).
+          in React with an aggregator function. I created a sandwitch builder
+          app that lets you add ingrediants and make your own sandwitch. The app
+          comes with sort and filter features to sort/filter though items (nut
+          butters, jams, toppings).
         </p>
 
         <h2>Competitive Analysis</h2>
         <p>
-          First, we want to research other websites with aggregator functions. I chose 
-          3 websites with a favoriting function. I chose to compare Etsy, Sephora, and Amazon's favoriting
-          functionality and to outline the differences in a comparison chart. 
+          First, we want to research other websites with aggregator functions. I
+          chose 3 websites with a favoriting function. I chose to compare Etsy,
+          Sephora, and Amazon's favoriting functionality and to outline the
+          differences in a comparison chart.
         </p>
-        <h3>Metrics</h3>
-        <ul>
-          <li>
-            <span class="color">Time on Page </span>: Time spent on page to
-            complete the task.
-          </li>
-          <li>
-            <span class="color">Number of Clicks </span>: Number of clicks on
-            the page.
-          </li>
-          <li>
-            <span class="color">If Misclicked </span>: A boolean representing if
-            a user clicked a button not relevant to the task.
-          </li>
-        </ul>
+        <table>
+          <tr>
+            <th></th>
+            <th><span class="bold">Etsy's Favorites List</span></th>
+            <th><span class="bold">Sephora's "Loves" List</span></th>
+            <th><span class="bold">Amazon's Shopping List</span></th>
+          </tr>
+          <tr>
+            <td><span class="bold">Add and Remove from Liked List</span></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+          </tr>
+          <tr>
+            <td><span class="bold">Add to Cart from Liked List</span></td>
+            <td>✘ - can only navigate to item</td>
+            <td>✔ - button to move to cart</td>
+            <td>✔ - button to move to cart</td>
+          </tr>
+          <tr>
+            <td><span class="bold">Multiple Liked Lists</span></td>
+            <td>✘</td>
+            <td>✘</td>
+            <td>✔</td>
+          </tr>
+          <tr>
+            <td><span class="bold">Date Added Displayed</span></td>
+            <td>✘</td>
+            <td>✘</td>
+            <td>✔</td>
+          </tr>
+          <tr>
+            <td><span class="bold">Sort Through Items</span></td>
+            <td>✘</td>
+            <td>✔ - alphabetically by name, price, and date</td>
+            <td>✔ - by price and date</td>
+          </tr>
+          <tr>
+            <td><span class="bold">Search Items in List</span></td>
+            <td>✔</td>
+            <td>✘</td>
+            <td>✔</td>
+          </tr>
+          <tr>
+            <td><span class="bold">One-click Remove</span></td>
+            <td>✘ - second click to confirm</td>
+            <td>✔</td>
+            <td>✔</td>
+          </tr>
+          <tr>
+            <td><span class="bold">Undo Option After Remove</span></td>
+            <td>✘</td>
+            <td>✘</td>
+            <td>✔ - immediate undo option</td>
+          </tr>
+          <tr>
+            <td><span class="bold">Delete All Items at Once</span></td>
+            <td>✘</td>
+            <td>✘</td>
+            <td>✔ - can delete entire list</td>
+          </tr>
+        </table>
 
         <h2>Webpage Version A</h2>
         <p>
@@ -106,7 +154,7 @@
             time spent on version A.
           </p>
           <p>
-            <span class="color">Null Hypothesis</span>: There is no difference
+            <span class="color">Null Hypothesis</span>: There is ✘ difference
             in the time it takes to complete the task for version A and version
             B or version A takes less time.
           </p>
@@ -151,7 +199,7 @@
             complete the task.
           </p>
           <p>
-            <span class="color">Null Hypothesis</span>: There is no difference
+            <span class="color">Null Hypothesis</span>: There is ✘ difference
             in the number of clicks it takes to complete the task for version A
             and version B or version A uses less clicks.
           </p>
@@ -195,7 +243,7 @@
             hoped version B would lead to less misclicks.
           </p>
           <p>
-            <span class="color">Null Hypothesis</span>: There is no difference
+            <span class="color">Null Hypothesis</span>: There is ✘ difference
             on if the user misclicked for version A and version B.
           </p>
           <p>
