@@ -12,7 +12,7 @@
   <body>
     <body>
       <header>
-        <h1>Redesigning the Ky Michaels Salon Home Page</h1>
+        <h1>Intro to A/B Testing</h1>
       </header>
 
       <hr class="divider" />
@@ -20,166 +20,205 @@
       <main>
         <h2>Objective:</h2>
         <p>
-          The objective of the responsive redesign project was to improve the
-          usability of the Ky Michaels Salon home page through responsive web
-          design techniques.
+          The objective of the A/B testing project was to experiment with
+          different versions of a website and use A/B testing to find out which
+          version was "better."
         </p>
 
-        <h2>Webpage:</h2>
+        <h2>How do we measure "better"?</h2>
         <p>
-          <a href="https://kymichaelssalon.com/"
-            >https://kymichaelssalon.com/</a
-          >
+          We want to create a smoother, more likable user experience, so we are
+          trying to find the version that performs "better" in terms of user
+          satisfaction and engagement. I chose key metrics to test which version was "better" for the task of booking an
+          appointment.
         </p>
-        <p>
-          Ky Michaels Salon is a small business on Wickenden Street in
-          Providence. Their home page is the first page you see when you click
-          on their website. It lists the salon’s hours, address, and other
-          important information about the salon.
-        </p>
-        <div class="screenshot">
-          <img src="public/home_page1.png" alt="Ky Michaels Salon Home Page" />
-        </div>
-        <p>
-          Ky Michaels Salon is the salon I go to in Providence to cut my hair,
-          but I usually call in because their website is hard to navigate and
-          there is no link to book an appointment. I chose to redesign the home
-          page to help make the website interaction easier.
-        </p>
+        <h3>Metrics</h3>
+        <ul>
+          <li>
+            <span class="color">Time on Page </span>: Time spent on page to
+            complete the task.
+          </li>
+          <li>
+            <span class="color">Number of Clicks </span>: Number of clicks on
+            the page.
+          </li>
+          <li>
+            <span class="color">If Misclicked </span>: A boolean 
+            representing if a user clicked a button not relevant to the task.
+          </li>
+        </ul>
 
-        <h2>Usability Issues:</h2>
-        <ul>
-          <li>
-            Embedded YouTube video first thing on home page. Takes up most of
-            page. so inefficient and have to scroll to access main information.
-          </li>
-          <li>
-            Title on the browser tab is “Best Salon in Rhode Island color
-            specialists precision cutting,” and not salon name. Makes tab harder
-            to navigate to.
-          </li>
-        </ul>
-        <img src="public/tab_bar.png" alt="Ky Michaels Salon Tab Title" />
-        <ul>
-          <li>
-            Booking an appointment and pricing information are hard to find.
-            Have to use dropdown menu.
-          </li>
-          <li>
-            Inconsistent drop-down menus in the header. Some have drop-down menu
-            options and other do not. No indication which ones do.
-          </li>
-          <li>
-            Lack of a "Shop" option and unclear product categorization. Products
-            categorized by brand name (e.i. “R+CO,” “Shu Uemura,” “Kerastase,”
-            “Oribe”), and don't immediately know they're names of hair brands.
-          </li>
-          <li>
-            Home page only includes hours and address. Some stylists only work
-            certain days, so misleading.
-          </li>
-        </ul>
+        <h2>Webpage Version A</h2>
+        <p>
+          I tested on a doctor's office webpage. We are trying to design this
+          webpage to make it easy to book an appointment.
+        </p>
+        <video width="780" controls>
+          <source src="public/Version_A.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div class="screenshot">
           <img
-            src="public/home_page2.png"
-            alt="Ky Michaels Salon Home Page Scoll to Page 2"
+            src="public/a_html.png"
+            alt="Original Version A of Doctor's Office Webpage"
           />
         </div>
-
-        <h2>Accessibility Issues:</h2>
-        <ul>
-          <li>
-            Webpage is not well-adapted for screen readers. Not all body text is
-            read and cannot navigate through text using arrow keys .
-          </li>
-          <li>Missing alternative text for images.</li>
-          <li>Low contrast icons in the footer of payment options accept.</li>
-        </ul>
-        <div class="screenshot">
-          <img
-            src="public/home_page3.png"
-            alt="Ky Michaels Salon Home Page Scoll to Page 3"
-          />
-        </div>
-        <p>We can do better! Let's improve this webpage some more.</p>
-
-        <h2>Speed Sketching</h2>
         <p>
-          I used speed sketching to think of new designs for my webpage. This
-          technique helps flush out ideas!
+          The original version of the webpage has some usability issues: the
+          <span class="color">light blue buttons were hard to see</span> and the
+          <span class="color"
+            >appointment rows were not ordered chronologically</span
+          >. Both these issues could make it difficult for the user to book an
+          appointment.
         </p>
-        <img src="public/speed_sketch1.png" alt="Speed Sketching" />
 
-        <h2>Final Sketch</h2>
+        <h2>Webpage Version B</h2>
+        <video width="780" controls>
+          <source src="public/Version_B.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <img
+          src="public/Version_B_diagram.png"
+          alt="Version B of Doctor's Office Webpage"
+        />
         <p>
-          Here is a final sketch of my design for the Ky Michaels Salon home
-          page.
+          This version fixes some of the usability issues and makes other small
+          changes to the webpage. But is it "better?" Let's find out!
         </p>
-        <img src="public/final_sketch.png" alt="Final Sketch" />
 
-        <h2>Low-Fidelity Wireframes</h2>
+        <h2>Statistical Analysis</h2>
         <p>
-          Low-fidelity wireframes are basic representations of a digital
-          interface. They map out general layout of sections/objects. I created
-          low-fidelity wireframes at the beginning of my design process using
-          Figma.
+          All participants were asked to schedule an appointment with Adam Ng,
+          MD at Morristown Medical Center on April 23, 2024 as their task. For
+          all tests, I used an alpha value of 0.05. So, a test is statistically
+          significant if the p-value is less than the alpha.
         </p>
-        <h3>Desktop</h3>
+        <h3>Time on Page One Tailed T-Test</h3>
+        <div class="stat-test">
+          <p>
+            Time on page is a continous variable (meaning the time spent can
+            extend until infinity), so I knew to use a T-test. I chose to test
+            this metric using a one-tailed T-test, because I wanted to see if
+            version B optimized the time it took to complete the task on the
+            webpage. I hoped that version B would make it easier for users to
+            book an appointment, so time spent on version B would be less than
+            time spent on version A.
+          </p>
+          <p>
+            <span class="color">Null Hypothesis</span>: There is no difference
+            in the time it takes to complete the task for version A and version
+            B or version A takes less time.
+          </p>
+          <p>
+            <span class="color">Alternative Hypothesis</span>: Version B takes
+            less time to complete the task.
+          </p>
         <img
-          src="public/low_fi_desktop.png"
-          alt="Low-Fidelity Desktop Wireframe"
+          src="public/time_on_page_graph.png"
+          alt="Data and Statistical Variables from Time on Page T-Test"
         />
-        <h3>Tablet</h3>
-        <img
-          src="public/low_fi_tablet.png"
-          alt="Low-Fidelity Tablet Wireframe"
-        />
-        <h3>Mobile Phone</h3>
-        <img
-          src="public/low_fi_phone.png"
-          alt="Low-Fidelity Mobile Phone Wireframe"
-        />
+        <p>
+          <span class="color">Conclusion</span>: The p-value is the level of
+          significance. The p-value for this test was less than 0.01, which is
+          smaller than the alpha. So, we accept the alternative hypothesis. The
+          t-score is the magnitude of difference between the two groups. We
+          received a negative t-score, meaning there was a significant decrease
+          in time spent on the page from version A to version B. We are 95% confident that it takes users less time on version B to
+          book an appointment.
+        </p>
+        <p>
+          <span class="color">Summary Statistics</span>: The average time it
+          took to complete the task in version A was 24.4 seconds, but in
+          version B it was 9.4 seconds. This gives us a rough estimate of how
+          much less time to takes on version B than on version A. There is at
+          least a 10 second decrease in time it takes to book an appointment on
+          version B than version A.
+        </p>
+      </div>
 
-        <h2>Visual Design Style Guide</h2>
-        <p>
-          My style guide details the <span class="italic">"look"</span> of my
-          webpage.
-        </p>
+      <h3>Number of Clicks One Tailed T-Test</h3>
+        <div class="stat-test">
+          <p>
+            Number of clicks is a continous variable (the number of times a user clicks on the webpage can 
+            extend until infinity), so I knew to use a T-test. I used a one-tailed T-test, because I wanted to see if
+            version B optimized the number of clicks it took to complete the task. I hoped that version B would make it easier for users to
+            book an appointment, so there would be fewer clicks on version B than on version A. For both versions, there required 2 correct clicks to complete the task.
+          </p>
+          <p>
+            <span class="color">Null Hypothesis</span>: There is no difference
+            in the number of clicks it takes to complete the task for version A and version
+            B or version A uses less clicks. 
+          </p>
+          <p>
+            <span class="color">Alternative Hypothesis</span>: Version B uses less clicks
+            to complete the task than version A.
+          </p>
         <img
-          src="public/visual_style_guide.png"
-          alt="Visual Style Guide Colors, Typography, Icons, Buttons, Input Feilds"
+          src="public/num_clicks_graph.png"
+          alt="Data and Statistical Variables from Time on Page T-Test"
         />
+        <p>
+          <span class="color">Conclusion</span>: The p-value for this test was 0.01, which is
+          less than the alpha. We accept the alternative hypothesis. The t-score is negative, so there was a significant decrease
+          in the number of clicks on the page from version A to version B.
+          We are 95% confident that it takes users less clicks on version B to
+          book an appointment than on version A.
+        </p>
+        <p>
+          <span class="color">Summary Statistics</span>: The average clicks it
+          took to complete the task in version A was 5, but in
+          version B it was 2.5 clicks. The task only takes 2 clicks to complete, so version A led
+          to more misclicks. We can conclude that version B makes it more straightforward to book an appointment
+          and that version A can be misleading. Version A also has a variance of 28.9, whereas version B has a variance of
+          0.2. This means there is more change in the number of clicks used in version A than B. So, users are more
+          certain in version B on where to click when booking an appointment.
+        </p>
+      </div>
 
-        <h2>High Fidelity Wireframes</h2>
+      <h3>If Misclicked Chi-Square Test</h3>
+        <div class="stat-test">
+          <p>
+            If misclicked is a categorical variable, meaning each group can have 2 categories, TRUE or FALSE for if the user misclicked. 
+            We are tring to see if the frequency of each category is different across the two versions, so we use a chi-square test. 
+            I wanted to see if there was a difference on if the user
+            misclicked in version A and version B. I hoped version B would lead to less misclicks. 
+          </p>
+          <p>
+            <span class="color">Null Hypothesis</span>: There is no difference
+            on if the user misclicked for version A and version B. 
+          </p>
+          <p>
+            <span class="color">Alternative Hypothesis</span>: There is a difference on if the user misclicked for version A and version B.
+          </p>
+        <img
+          src="public/if_misclicked_graph.png"
+          alt="Data and Statistical Variables from Time on Page T-Test"
+        />
         <p>
-          High-fidelity wireframes are representations of the polished, final
-          design. They employ components of the visual style guide, like fonts,
-          colors, buttons, and input boxes. I created my high-fidelity
-          wireframes using Figma.
+          <span class="color">Conclusion</span>: The p-value for this test was 0.04, which is still
+          less than the alpha. We accept the alternative hypothesis, and
+           we are 95% confident that there is a difference on if the user misclicks across version A and version B.
         </p>
-        <h3>Desktop</h3>
-        <img
-          src="public/hi_fi_desktop.png"
-          alt="High-Fidelity Desktop Wireframe"
-        />
-        <h3>Tablet</h3>
-        <img
-          src="public/hi_fi_tablet.png"
-          alt="High-Fidelity Tablet Wireframe"
-        />
-        <h3>Mobile Phone</h3>
-        <img
-          src="public/hi_fi_phone.png"
-          alt="High-Fidelity Mobile Phone Wireframe"
-        />
+        <p>
+          <span class="color">Summary Statistics</span>: We can look closer at the table values to find the direction
+          of this difference. In version A there were 6 misclicks, but only 1 misclick in version B. This means that version B led to 
+          users being more confident in where to click to book an apointment than version A. So, version B is more user-friendly. 
+        </p>
+      </div>
 
-        <h2>Redesigned Webpage:</h2>
-        <p>Here is my final redesigned webpage! Check it out here:</p>
-        <p>
-          <a href="https://prlakshm.github.io/kymicheals/"
-            >https://prlakshm.github.io/kymicheals/</a
-          >
-        </p>
+      <h2>Combined Discussion</h2>
+      <p>
+        For all metrics, version B performed better. We can go ahead and change our doctor's office webpage from version A to 
+        version B to make it easier for the user to book an appointment. This update will improve user satisfaction and engagement, meaning
+        that users are more likely to choose our website for service. 
+      </p>
+      <p>
+        It's also important to note that there were only 22 participlants in the testing process, where each test had 22 data points 
+        for version A and 21 data points for version B. All participants were college students. They were familiar with technology, so this could have led to bias in results. 
+        Though this testing process helped understand
+        the significance of A/B testing, if we were testing a real webpage, we would need to test according to that website's 
+        demographic and traffic rate.
+      </p>
         <br />
         <br />
       </main>

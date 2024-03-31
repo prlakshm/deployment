@@ -1,0 +1,6 @@
+,,,,,,,,
+,Number of Misclicks Across Different Versions,,,,,Outputs,,
+,,TRUE,FALSE,,,df,1,
+,Version A,6,16,,,chi2,3.994777709,
+,Version B,1,20,,,p-value,0.045641473,
+,,,,,,,,
