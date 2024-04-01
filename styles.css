@@ -49,6 +49,13 @@ h3 {
     font-size: 1.3rem;
     text-decoration: underline;
 }
+h4 {
+    margin-bottom: 0rem;
+    width: 60vw;
+    align-items: center;
+    text-align: center; /* Center align text */
+    font-size: 1.3rem;
+}
 p {
     margin-bottom: 1rem;
     width: 60vw;
@@ -76,6 +83,10 @@ ul {
     font-size: 1.2rem;
     flex-direction: column;
 }
+
+.features ul {
+    width: 60vw;
+}
 a {
     color: #809376;
     font-size: 1.25rem;
@@ -98,10 +109,10 @@ img {
     margin: 1rem auto;
 }
 .sketch {
-    width: 45vw;
+    width: 35vw;
 }
 .screenshot {
-    width: 50vw;
+    width: 60vw;
 }
 li {
     margin-bottom: 0.5rem;
