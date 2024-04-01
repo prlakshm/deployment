@@ -87,6 +87,9 @@ ul {
 .features ul {
     width: 60vw;
 }
+.features p {
+    width: 50vw;
+}
 a {
     color: #809376;
     font-size: 1.25rem;
