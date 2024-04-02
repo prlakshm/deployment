@@ -22,7 +22,7 @@
         <p>
           The objective of this project was to gain experience building web apps
           in React with an aggregator function. I created a sandwitch builder
-          app that lets you add ingrediants and make your own sandwitch. The app
+          app that lets you add ingrediants and create your own sandwitch. The app
           comes with sort and filter features to sort/filter though items (nut
           butters, jams, toppings).
         </p>
@@ -34,6 +34,9 @@
           Sephora, and Amazon's favoriting functionality and to outline the
           differences in a comparison chart.
         </p>
+        <p>Etsy: <a href="https://www.etsy.com/">https://www.etsy.com/</a>
+        <br />Sephora: <a href="https://www.sephora.com/">https://www.sephora.com/</a>
+        <br />Amazon: <a href="https://www.amazon.com/">https://www.amazon.com/</a> </p>
         <h3>Comparison Chart</h3>
         <br />
         <table>
@@ -59,7 +62,7 @@
             <td><span class="bold">Multiple Liked Lists</span></td>
             <td>✘</td>
             <td>✘</td>
-            <td>✔</td>
+            <td>✔ - can also name each list</td>
           </tr>
           <tr>
             <td><span class="bold">Date Added Displayed</span></td>
@@ -102,10 +105,10 @@
         <h3>Summary</h3>
         <p>
           <span class="color">Etsy's Favorites List:</span> Etsy’s favorite list
-          is the most basic. You can only click into the items from the list and
+          is the most basic. You can only click into the items from the favorites list and
           there is no one-click button to add the item to the cart. This leads
           to less users actually buying the item from the favorites list,
-          because there is no incentive. You can search through items, but, in
+          because there is no visual incentive. You can search through items, but, in
           comparison, an add to cart button would have been more helpful than
           the search.
         </p>
@@ -120,9 +123,9 @@
         </p>
         <p>
           <span class="color">Amazon Shopping List:</span> Amazon’s shopping
-          lists had the most detailed functionality. There are multiple shopping
-          lists you can add, and you can name the shopping lists. This is a good
-          idea, because it allows users to easily navigate to self-categorized
+          lists have the most detailed functionality. There are multiple shopping
+          lists you can add, and you can name the lists. This is a good
+          idea, because it allows users to navigate to self-categorized
           liked products (e.i. makeup, fashion, home goods). Also, Amazon has an
           immediate undo option after you click remove, which is more convenient
           than a second confirmation click to remove like Etsy, which requires
@@ -139,7 +142,7 @@
             Z to A) like Sephora
           </li>
           <li>
-            One-click remove like Amazon and Sephora which make it convenient to delete an item
+            One-click remove like Amazon and Sephora which makes it convenient to delete an item
           </li>
           <li>
             Option to remove items from the aggregated list all at once like
@@ -153,8 +156,8 @@
           I decided to create a sandwitch builder app called PB&J Time that
           allows you to build gourmet peanut butter and jelly sandwitches. The
           aggregator function would be adding to the cart/adding to the
-          sandwitch. I want the sandwitch to "build" on the screen and include
-          sort/filtering funcitonality.
+          sandwitch. I want to show the sandwitch "build" on the screen and include
+          sort/filtering functionality.
         </p>
         <h3>Visual Design</h3>
         <p>Initial sketch of web app:</p>
@@ -190,14 +193,19 @@
             alt="Screenshot of PB&J Time React App in deployed form"
           />
         </div>
+        <p>Check out a video of me navigating through the app!</p>
+        <video width="780" controls>
+          <source src="public/PB&J Time _ Sandwitch Builder.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
         <h3>Final List of Features</h3>
         <ul class="features">
           <li>
-            <span class="color">Sorting feature:</span> can sort by category of item (nut butter, jam, topping) and by flavor (savory, sweet)
+            <span class="color">Sorting Feature:</span> can sort by category of item (nut butter, jam, topping) and by flavor (savory, sweet)
           </li>
           <li>
-            <span class="color">Filtering Categories:</span> can filter by price (high to low, low to high) and name (A to Z, Z to A)
+            <span class="color">Filtering Feature:</span> can filter by price (high to low, low to high) and name (A to Z, Z to A)
           </li>
           <li>
             <span class="color">Stackable Sort and Filter:</span> sort and filter can be layered, existing sort applied when filter changes and vice versa
@@ -206,50 +214,42 @@
             <span class="color">Aggregator Section:</span> cart with items displayed on right, items also added to sandwich visual
           </li>
           <li>
-            <span class="color">Updated count of items in your aggregator:</span> count of items in cart and total price displayed at bottom cart
+            <span class="color">Updated Count of Items in Aggregator:</span> total count of items in cart and total price displayed at bottom cart
           </li>
           <li>
-            <span class="color">Reset functionality:</span> can reset sort and reset filter with dropdown menu
+            <span class="color">Reset functionality:</span> can reset sort and reset filter within dropdown menu
           </li>
           <li>
-            <span class="color">16 Item Cards Each Displaying:</span> item image, item name, item category, item flavor, item price
+            <span class="color">16 Item Cards:</span> item image, item name, item category, item flavor, item price all displayed
           </li>
           <li>
-            <span class="color">Button Adds and Removes from Aggregator:</span> button to add to cart from item card, "X" to remove from cart
+            <span class="color">Button Adds and Removes from Aggregator:</span> button to "Add" to cart from item card, "X" to remove from cart
           </li>
           <li>
-            <span class="color">Clear Cart:</span> trash can button to remove all items from cart
+            <span class="color">Clear Cart:</span> "Trash Can" button to remove all items from cart
           </li>
           <li>
             <span class="color">Responsive:</span> website responsive to desktop, tablet, and mobile phone devices
           </li>
           <li>
-            <span class="color">AI-generated Images:</span> all images generated with Prodia AI and edited with Photoshop to match aesthetic
+            <span class="color">AI-Generated Images:</span> all images are generated with Prodia AI and edited with Photoshop to match aesthetic
           </li>
           <li>
             <span class="color">Animation:</span> items "laid" down with animation onto sandwich visual
           </li>
         </ul>    
         
-        <h3>User Testing</h3>
-        <p>Check out a video of my friend's first impression to the app!</p>
-        <div class="screenshot">
-          <img
-            src="public/app.png"
-            alt="Screenshot of PB&J Time React App in deployed form"
-          />
         </div>
         
         <h3>List of Future Features</h3>
-        <p>When my friend was navigating through the app, she hesitated at the end because she 
-          didn't know how to mark she was done. She just told me she was done an I ended the video, but a feature accounting 
-          for this would be helpful. So, potential features to add would be:</p>
+        <p>One shortcoming of the app is that there is no way for users
+           to mark when they're done building their sandwitch. So, potential features to add could be:</p>
         <ul class="features">
           <li>
-            <span class="color">Build Button:</span> button to click when done building sandwitch, clears sandwitch and plays confetti effect 
+            <span class="color">Build Button:</span> button to click when done building sandwitch, plays confetti effect then clears sandwitch 
           </li>
           <li>
-            <span class="color">Popup:</span> popup appreading after press build button, shows celebratory message and final image of sandwitch
+            <span class="color">Popup:</span> popup appearing after press "Build" button, shows celebratory message and final image of sandwitch
           </li>
         </ul>
 
